@@ -1,3 +1,6 @@
+"""Ethiopian_date is a python code that change ethiopian date to gregorian
+and vice-versa"""
+
 import datetime
 def _start_day_of_ethiopian( year):
  """ returns first day of that Ethiopian year 
