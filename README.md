@@ -8,8 +8,7 @@ def _start_day_of_ethiopian( year):
  """ returns first day of that Ethiopian year 
  
   Params:
-  
-        * year: an int """
+    * year: an int """
         
     new_year_day = (year // 100) - (year // 400) - 4
     
