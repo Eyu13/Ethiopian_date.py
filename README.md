@@ -2,26 +2,41 @@
 and vice-versa"""
 
 import datetime
+
 def _start_day_of_ethiopian( year):
+
  """ returns first day of that Ethiopian year 
+ 
   Params:
+  
         * year: an int """
+        
     new_year_day = (year // 100) - (year // 400) - 4
+    
     # magic formula gives start of year
+    
     if (year - 1) % 4 == 3:
+    
      # if the prev ethiopian year is a leap year, new-year occrus on 12th
+     
         new_year_day += 1
 
     return new_year_day
 
 def ethiopian_to_gregorian(year, month, date):
+
   """ Gregorian date object representation of provided Ethiopian date
 
         Params:
+        
         * year: an int
+        
         * month: an int
+        
         * date: an int """
+        
     # prevent incorect input
+    
     inputs = (year, month, date)
     if 0 in inputs or [data.__class__ for data in inputs].count(int) != 3:
         raise ValueError("Malformed input can't be converted.")
